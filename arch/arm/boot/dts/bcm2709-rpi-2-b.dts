@@ -67,8 +67,8 @@
 		spi-max-frequency = <500000>;
 	};
 
-	spidev1: spidev@1{
-		compatible = "spidev";
+	spidev1: tpm_spi_tis@1{
+		compatible = "tcg,tpm_spi_tis";
 		reg = <1>;	/* CE1 */
 		#address-cells = <1>;
 		#size-cells = <0>;
