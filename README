@@ -1,3 +1,10 @@
+# How-to compile Ubuntu kernel image for RaspberryPi-3
+```
+make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- bcm2709_defconfig
+make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- menuconfig
+make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- dtbs zImage modules
+```
+
         Linux kernel release 4.x <http://kernel.org/>
 
 These are the release notes for Linux version 4.  Read them carefully,
